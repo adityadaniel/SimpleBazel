@@ -1,0 +1,11 @@
+build --apple_platform_type=ios
+build --cpu=ios_sim_arm64
+build --spawn_strategy=local
+build --features=swift.use_global_module_cache
+build --subcommands
+build --verbose_failures
+build --compilation_mode=dbg
+build --swiftcopt=-v
+build --swiftcopt=-incremental
+build --host_swiftcopt=-incremental
+
